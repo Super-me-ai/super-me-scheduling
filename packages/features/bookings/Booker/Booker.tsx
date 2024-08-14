@@ -1,4 +1,4 @@
-import { AnimatePresence, LazyMotion, m } from "framer-motion";
+import { AnimatePresence, LazyMotion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef } from "react";
 import { Toaster } from "react-hot-toast";
@@ -454,7 +454,7 @@ const BookerComponent = ({
             />
           </div>
         )}
-        {!hideBranding && !isPlatform && (
+        {/* {!hideBranding && !isPlatform && (
           <m.span
             key="logo"
             className={classNames(
@@ -464,7 +464,7 @@ const BookerComponent = ({
             )}>
             <PoweredBy logoOnly />
           </m.span>
-        )}
+        )} */}
       </div>
 
       <BookFormAsModal
